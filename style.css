@@ -77,9 +77,6 @@ form {
 	position: relative;
 }
 
-form.error {
-}
-
 input {
 	background-color: transparent;
 	border: 1px solid var(--desaturatedRed);
