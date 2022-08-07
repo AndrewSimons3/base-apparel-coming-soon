@@ -5,13 +5,15 @@ const form = document.querySelector('#form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const emailVal = email.value;
+  let emailVal = email.value;
 
   if (!validateEmail(emailVal)) {
     form.classList.add('error');
   } else {
     form.classList.remove('error');
   }
+
+  form.reset();
 })
 
 const validateEmail = (email) => {
